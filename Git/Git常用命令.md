@@ -6,7 +6,7 @@
 
 全局配置：`git config --global user.name "Your Name"`
 
-当前仓库配置：`git  config --local user.name "Your Name"`
+当前仓库配置：`git config --local user.name "Your Name"`
 
 #### 配置自己的邮箱
 
