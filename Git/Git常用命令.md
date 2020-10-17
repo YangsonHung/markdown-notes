@@ -70,10 +70,6 @@
 
 `git diff HEAD -- file`
 
-#### 查看引用日志
-
-`git reflog`
-
 
 
 ### 3、提交命令
