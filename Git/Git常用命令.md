@@ -98,6 +98,26 @@
 
 `git reset --hard commit_id`
 
+#### 撤销commit
+
+撤销commit，写的代码仍然保留，`HEAD^`是上个版本，也可以写成`HEAD~1`，撤回2次，就用`HEAD~2`
+
+`git reset --soft HEAD^`
+
+参数说明：
+
+`--mixed`：不删除工作空间改动代码，撤销commit，并且撤销`git add .` 操作。这个为默认参数，`git reset --mixed HEAD^` 和 `git reset HEAD^` 效果是一样的
+
+`--soft`：不删除工作空间改动代码，撤销commit，不撤销`git add .`
+
+`--hard`：删除工作空间改动代码，撤销commit，撤销`git add .`
+
+#### 修改commit
+
+进入vim编辑器，修改完注释保存。
+
+`git commit --amend`
+
 #### 撤销暂存
 
 把暂存区的修改撤销掉（unstage），重新放回工作区
